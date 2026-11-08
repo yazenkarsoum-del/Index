@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>إلى نبض قلبي - رقيه</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+    
+            body {
+                background: linear-gradient(135deg, #2b1055, #7597de);
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                padding: 20px;
+            }
+    
+            .card {
+                background: rgba(255, 255, 255, 0.12);
+                backdrop-filter: blur(14px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                padding: 35px 25px;
+                border-radius: 25px;
+                text-align: center;
+                max-width: 480px;
+                width: 100%;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+                animation: fadeIn 1.2s ease-in-out;
+            }
+    
+            h1 {
+                font-size: 1.9rem;
+                margin-bottom: 8px;
+                color: #ffd1dc;
+            }
+    
+            .subtitle {
+                font-size: 1.1rem;
+                color: #ff9ebb;
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+    
+            .poetry {
+                background: rgba(0, 0, 0, 0.3);
+                padding: 18px;
+                border-radius: 15px;
+                margin: 20px 0;
+                font-style: italic;
+                line-height: 2.2;
+                color: #fff;
+                border-right: 5px solid #ff4757;
+                font-size: 1.1rem;
+                text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            }
+    
+            p {
+                font-size: 1.05rem;
+                line-height: 1.9;
+                margin-bottom: 20px;
+                color: #f1f5f9;
+            }
+    
+            .heart {
+                font-size: 3.5rem;
+                color: #ff3838;
+                margin: 5px 0;
+                animation: heartbeat 1.2s infinite;
+                text-shadow: 0 0 20px rgba(255, 56, 56, 0.8);
+            }
+    
+            .signature {
+                margin-top: 15px;
+                font-size: 1.1rem;
+                color: #ffd1dc;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+            }
+    
+            .btn {
+                background: linear-gradient(45deg, #ff4757, #ff6b81);
+                color: #fff;
+                border: none;
+                padding: 14px 28px;
+                font-size: 1.05rem;
+                font-weight: bold;
+                border-radius: 35px;
+                cursor: pointer;
+                transition: 0.3s;
+                box-shadow: 0 6px 20px rgba(255, 71, 87, 0.5);
+                margin-top: 15px;
+            }
+    
+            .btn:hover {
+                transform: scale(1.08);
+                box-shadow: 0 8px 25px rgba(255, 71, 87, 0.8);
+            }
+    
+            .hidden-message {
+                display: none;
+                margin-top: 20px;
+                font-size: 1rem;
+                background: rgba(255, 71, 87, 0.25);
+                padding: 18px;
+                border-radius: 12px;
+                line-height: 1.9;
+                color: #fff;
+                border: 1px dashed #ff6b81;
+                text-align: right;
+            }
+    
+            @keyframes heartbeat {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.2); }
+            }
+    
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="card">
+            <h1>إلى أطهر وأعز إنسانة</h1>
+            <div class="subtitle">يا تاج الرأس ومالكة القلب ( رقيه ) ❤️</div>
+            
+            <div class="heart">💖</div>
+    
+            <div class="poetry">
+                "يا أفضل رقيه في عيون البشر والشوق غلاب<br>
+                يا تاج راسـي ويا عـلاج الروؤس المـوجعة<br>
+                لو تطلبين الروح فدوى.. ما بعد حبك حساب<br>
+              أنتِ القصيدة التي أرتلها كل الصباح.. وأنتِ الأمنية التي طال بها الأمل
+    
+    يا عطر أيامي ويا بهجة السنين.. يا من بحبها يزهر الرمش والملل
+      يا أجمل أقدار العمر.. يا أطهر وأغلى منزلة "
+            </div>
+    
+            <p>
+                كل عام وأنتِ الحب الذي لا ينتهي، والصديقة والحبيبة التي تملأ عيوني فرحاً ودنياي حياة. 
+               يا أطهر صدفة وأجمل نعمة رزقني بها ربي.. كل عام وأنتِ بقلبي، وكل عام وأنا أفتخر أنكِ تاج رأسي ورفيقة دربي يا رقيه
+      مكانتك غير عن الكل، ووجودك معي هو العز والفخر كله يا تاج راسي.
+            </p>
+    
+            <!-- التوقيع باسمك -->
+            <div class="signature">
+                يوم ميلاد سعيد يا غالية 🎈<br>
+                <span>من محبك: يزن 🤍</span>
+            </div>
+            
+            <button class="btn" onclick="revealMessage()">اضغطي هنا عشان تعرفين كثر حبي لِك😊🫶🏻 💌</button>
+            
+            <div id="secretMsg" class="hidden-message">
+                يا بعد عمري وكل أهلي وناسي يا رقيه.. أحبك كثر ما تعجز الكلمات تصف شعوري، وكثر ما عيونك تسرقني من هموم هالدنيا. إلى رقيّة، يا من جعلتِ للحياة طعماً آخر، وكل دقيقة معك عيد ميلاد لقلبي. أحبكِ بقدر ما أنتِ جميلة في حياتي وأكثر
+     وكل سنة وأنتِ أقرب لي من نبض قلبي! ✨🤍
+            </div>
+        </div>
+    
+        <script>
+            function revealMessage() {
+                var msg = document.getElementById('secretMsg');
+                if (msg.style.display === 'block') {
+                    msg.style.display = 'none';
+                } else {
+                    msg.style.display = 'block';
+                }
+            }
+        </script>
+    
+    </body>
+    </html>
